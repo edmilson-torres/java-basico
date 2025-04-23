@@ -1,0 +1,55 @@
+classDiagram
+    class IReprodutorMusical {
+        <<interface>>
+        +tocar(): void
+        +pausar(): void
+        +selecionarMusica(musica: String): void
+    }
+
+    class IAparelhoTelefonico {
+        <<interface>>
+        +ligar(numero: String): void
+        +atender(): void
+        +desligar(): void
+        +iniciarCorreioVoz(): void
+    }
+
+    class INavegadorInternet {
+        <<interface>>
+        +exibirPagina(url: String): void
+        +adicionarNovaAba(): void
+        +atualizarPagina(): void
+    }
+
+    class ReprodutorMusical {
+        +tocar(): void
+        +pausar(): void
+        +selecionarMusica(musica: String): void
+    }
+
+    class AparelhoTelefonico {
+        +ligar(numero: String): void
+        +atender(): void
+        +desligar(): void
+        +iniciarCorreioVoz(): void
+    }
+
+    class NavegadorInternet {
+        +exibirPagina(url: String): void
+        +adicionarNovaAba(): void
+        +atualizarPagina(): void
+    }
+
+    class iPhone {
+        +reprodutorMusical: IReprodutorMusical
+        +aparelhoTelefonico: IAparelhoTelefonico
+        +navegadorInternet: INavegadorInternet
+    }
+
+    IReprodutorMusical <|.. ReprodutorMusical
+    IAparelhoTelefonico <|.. AparelhoTelefonico
+    INavegadorInternet <|.. NavegadorInternet
+
+    iPhone --> IReprodutorMusical
+    iPhone --> IAparelhoTelefonico
+    iPhone --> INavegadorInternet
