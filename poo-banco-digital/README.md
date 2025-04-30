@@ -1,18 +1,43 @@
-## Getting Started
+# Banco Digital - Projeto em Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Descrição Geral
+Este projeto é uma simulação de um banco digital, desenvolvido em Java, que permite a criação e gerenciamento de contas bancárias. Ele foi projetado para demonstrar conceitos de **Programação Orientada a Objetos (POO)**, como herança, polimorfismo, encapsulamento e abstração. O sistema suporta operações básicas de contas bancárias, como depósitos, saques, transferências e impressão de extratos.
 
-## Folder Structure
+## Estrutura do Projeto
+O projeto está organizado da seguinte forma:
 
-The workspace contains two folders by default, where:
+- **Main.java**: Classe principal que executa o programa.
+- **IConta.java**: Interface que define as operações de uma conta.
+- **Conta.java**: Classe abstrata base para contas bancárias.
+- **ContaCorrente.java**: Classe que representa uma conta corrente.
+- **ContaPoupanca.java**: Classe que representa uma conta poupança.
+- **Cliente.java**: Classe que representa um cliente do banco.
+- **Banco.java**: Classe que gerencia as contas e clientes do banco.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Funcionalidades
+O sistema oferece as seguintes funcionalidades:
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- **Criação de contas**: Conta Corrente e Conta Poupança.
+- **Operações bancárias**:
+  - Depósito
+  - Saque
+  - Transferência entre contas
+- **Impressão de extratos**: Exibe o histórico de transações de uma conta.
+- **Gerenciamento de clientes**: Listagem de clientes e suas contas.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Objetivo do Projeto
+O objetivo principal deste projeto é aplicar os conceitos de POO em um cenário prático, simulando um sistema bancário simples. Ele também serve como base para estudos e aprimoramento de habilidades em Java.
 
-## Dependency Management
+## Configuração do Ambiente
+Siga os passos abaixo para configurar o ambiente, compilar e executar o projeto:
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+1. Clone o repositório utilizando o comando `git clone` e navegue até o diretório do projeto.
+2. Certifique-se de que o **Java Development Kit (JDK) 8** ou superior está instalado e configurado no `PATH` do sistema operacional.
+3. Compile os arquivos Java utilizando o comando `javac` no diretório onde os arquivos `.java` estão localizados.
+4. Execute o programa utilizando o comando `java Main`.
+
+## Contribuição
+Contribuições são bem-vindas! Sinta-se à vontade para abrir **issues** ou enviar **pull requests** para melhorias no projeto.
+
+## Licença
+Este projeto é de uso livre para fins educacionais e está sob a licença **MIT**.
