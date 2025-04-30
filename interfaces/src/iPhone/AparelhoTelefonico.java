@@ -1,4 +1,4 @@
-package iPhone;
+package iphone;
 
 public class AparelhoTelefonico {
     private String numeroAtual;

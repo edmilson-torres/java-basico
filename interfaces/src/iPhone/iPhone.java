@@ -1,11 +1,11 @@
-package iPhone;
+package iphone;
 
-public class iPhone implements ReprodutorMusicalInterface, AparelhoTelefonicoInterface, NavegadorInternetInterface {
+public class Iphone implements ReprodutorMusicalInterface, AparelhoTelefonicoInterface, NavegadorInternetInterface {
     private ReprodutorMusical reprodutor;
     private AparelhoTelefonico telefone;
     private NavegadorInternet navegador;
 
-    public iPhone() {
+    public Iphone() {
         this.reprodutor = new ReprodutorMusical();
         this.telefone = new AparelhoTelefonico();
         this.navegador = new NavegadorInternet();

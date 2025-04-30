@@ -1,8 +1,8 @@
-import iPhone.iPhone;
+import iphone.Iphone;
 
 public class Main {
     public static void main(String[] args) {
-        iPhone iphone = new iPhone();
+        Iphone iphone = new Iphone();
         iphone.selecionarMusica("Música 1");
         iphone.tocar();
         iphone.ligar("123456789");
